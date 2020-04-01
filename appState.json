@@ -12,7 +12,7 @@
         "filePath": "lasttestofthedayindu.js",
         "cursor": {
           "lineNumber": 3,
-          "column": 54
+          "column": 50
         },
         "config": {
           "runtime": "nodejs10.x",
@@ -24,12 +24,19 @@
         },
         "triggers": [
           {
-            "resourceName": "cognitolastTestIndu",
-            "config": {
-              "triggerType": "CustomMessage"
-            }
+            "resourceName": "apigusEast1TracingAPIqainduoprodany",
+            "config": {}
           }
-        ]
+        ],
+        "testCases": {
+          "c6bf062d-c70f-49c7-8ae8-80f1c2674674": {
+            "id": "c6bf062d-c70f-49c7-8ae8-80f1c2674674",
+            "name": "Test event",
+            "functionId": "1c9192ed-b67d-48d1-ba20-a6e8bdd38416",
+            "event": "{\"key1\": \"value1\", \"key2\": \"value2\", \"key3\": \"value3\"}",
+            "eventTemplate": "hello-world"
+          }
+        }
       }
     },
     "openFiles": [
@@ -193,6 +200,78 @@
             }
           }
         }
+      },
+      "apigusEast1indulastAPiqainduany": {
+        "name": "apigusEast1indulastAPiqainduany",
+        "type": "API_GATEWAY",
+        "config": {
+          "selectedRegion": "us-east-1",
+          "apiMode": 0,
+          "apiName": "indulastAPi",
+          "endpointType": "REGIONAL",
+          "resourceMode": 0,
+          "resourceName": "qa/indu",
+          "resourcePath": "/qa/indu",
+          "restMethod": "ANY",
+          "proxyIntegration": false,
+          "enableCORS": false,
+          "stageMode": 0,
+          "stageName": "test123",
+          "mode": 0
+        }
+      },
+      "apigusEast1sachithraAPInameqainduoany": {
+        "name": "apigusEast1sachithraAPInameqainduoany",
+        "type": "API_GATEWAY",
+        "config": {
+          "selectedRegion": "us-east-1",
+          "apiMode": 1,
+          "apiName": "sachithraAPIname",
+          "apiId": "052p9kjn18",
+          "endpointType": "REGIONAL",
+          "rootResourceId": "zrjp6rdv3b",
+          "existingResources": {
+            "/1111": "0rjsnt",
+            "/test/stging": "3y9a7c",
+            "/test": "9vz3u0",
+            "/test/stging/ind": "aw3y41",
+            "/": "zrjp6rdv3b"
+          },
+          "resourceMode": 0,
+          "resourceName": "qa/indu/o",
+          "resourcePath": "/qa/indu/o",
+          "restMethod": "ANY",
+          "proxyIntegration": false,
+          "enableCORS": false,
+          "stageMode": 0,
+          "stageName": "test123s",
+          "mode": 1
+        }
+      },
+      "apigusEast1TracingAPIqainduoprodany": {
+        "name": "apigusEast1TracingAPIqainduoprodany",
+        "type": "API_GATEWAY",
+        "config": {
+          "selectedRegion": "us-east-1",
+          "apiMode": 1,
+          "apiName": "TracingAPI",
+          "apiId": "cbph0bahj2",
+          "endpointType": "EDGE",
+          "rootResourceId": "zdbz9v0syk",
+          "existingResources": {
+            "/trace": "e7v79d",
+            "/": "zdbz9v0syk"
+          },
+          "resourceMode": 0,
+          "resourceName": "qa/indu/oprod",
+          "resourcePath": "/qa/indu/oprod",
+          "restMethod": "ANY",
+          "proxyIntegration": false,
+          "enableCORS": false,
+          "stageMode": 0,
+          "stageName": "prod1",
+          "mode": 1
+        }
       }
     },
     "customTemplate": {
@@ -222,7 +301,7 @@
     "platform": "AWS",
     "language": "nodejs",
     "platformRegions": {},
-    "lastSave": 1585748811923
+    "lastSave": 1585749364498
   },
   "VCS_STATE": {
     "provider": "GitHub",
